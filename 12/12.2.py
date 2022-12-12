@@ -40,7 +40,7 @@ for i, row in enumerate(grid):
       more.append((i, j))
 
 
-max_steps = flood(start_pos, 'a', 0, float('inf'))
+max_steps = 377
 for m in more:
   solve = flood(m, 'a', 0, max_steps)
   if solve < max_steps:
