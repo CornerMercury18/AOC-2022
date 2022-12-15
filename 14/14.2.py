@@ -1,5 +1,6 @@
 from os.path import dirname, join
 
+
 def get_grid(data):
   grid = {}
   for line in data:
@@ -48,7 +49,6 @@ def drop_sand():
   return True
 
 
-
 current_dir = dirname(__file__)
 path = join(current_dir, "./14i.txt")
 
@@ -63,7 +63,6 @@ for line in data:
     if coord[1] > max_y:
       max_y = coord[1]
 
-
 grid = get_grid(data)
 
 count = 0
@@ -72,6 +71,5 @@ while True:
     count += 1
   else:
     break
-
 
 print(count)
